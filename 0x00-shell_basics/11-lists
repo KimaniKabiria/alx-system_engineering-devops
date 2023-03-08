@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# List files in the current directory in long format, including hidden files
-ls -la
-
-# Change directory to the parent directory and list files in long format, including hidden files
-cd ..
-ls -la
-
-# Change directory to the /boot directory and list files in long format, including hidden files
-cd /boot
-ls -la
-
+ls -la . .. /boot
