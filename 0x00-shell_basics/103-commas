@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 -v | sed -E 's/$/,/' | tr '\n' ' ' && echo
+ls -a | grep -E '^[^[:alnum:]]*\.{0,2}[[:alnum:]]+' | sort -d | sed 's/$/,/' | tr -d '\n'; echo
