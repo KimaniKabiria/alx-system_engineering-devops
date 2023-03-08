@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1p --group-directories-first | awk '{ORS=","}1' | sed 's/,$/\n/'
+ls -xamp
